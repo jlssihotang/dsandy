@@ -24,6 +24,6 @@ var x = setInterval(function() {
   if (distance < 0) {
     clearInterval(x);
     document.getElementById("coming").innerHTML = "Here's the day";
-    document.getElementById("hitung").innerHTML = "<a href='main.html'>27 August 2020</a>";
+    document.getElementById("hitung").innerHTML = "<a href='/main.html'>27 August 2020</a>";
   }
 }, 1000);
