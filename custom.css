@@ -40,7 +40,7 @@ h1:hover {
 
 .center {
     position: absolute;
-    width: 500px;
+    width: 50vw;
     /* background-color: beige; */
     justify-content: center;
     align-items: center;
