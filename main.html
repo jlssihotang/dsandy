@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+    <link rel="stylesheet" href="custom.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="progress">
+    </div>
+    <div class="container">
+        <div class="progress" id="progress">
+        </div>
+        <section id="sec-1">
+            <div class="main-title txt-center">Prologue</div>
+            <div class="center">
+                <h1 id="sec-1-01" class="animate__animated animate__fadeIn" ><span class="title"> Aug 27,</span></br>
+                <span class="animate__animated animate__zoomIn animate__delay-1s">Today is <span class="big animate__animated animate__zoomIn animate__delay-2s">Your Day.</span><span class="animate__animated animate__zoomIn animate__delay-3s" > You are turning into</span></span>
+                <span class="animate__animated animate__zoomIn animate__delay-4s">"You look too good for your age" years old.</span>
+                </h1>
+                <h1 id="sec-1-02" class="animate__animated animate__fadeIn hide" ><span class="title"> How about that?</span></br>
+                    <span class="animate__animated animate__zoomIn animate__delay-2s">You're though, </span>
+                    <span class="animate__animated animate__zoomIn animate__delay-3s">you've come this far.</span></br>
+                    <span class="animate__animated animate__zoomIn animate__delay-4s">I wish it was</span>
+                    <span class="animate__animated animate__zoomIn animate__delay-5s">Crazy, Fascinating and all those good words that can describe how awesome it was. </span>
+                </h1>
+                <!-- <p class="direction txt-center animate__animated animate__slideInDown"><i class="txt-center txt-small">Tap the words</i></p> -->
+                <!-- <a href="#" class="btn animate__animated animate__slideInDown"><i>More</i></a> -->
+            </div>
+        </section>
+        <section id="sec-2">
+            <div class="center">
+                <h1>daskjdahskjd</h1>   
+            </div>
+        </section>
+    </div>
+    <script>
+        $(document).ready(function() {
+            $('.container').scroll(function() {
+                var winScroll = $('.container').scrollTop();
+                var height = $('.container').height();
+                var scrolled = (winScroll / height) * 100;
+                $('.progress').width(scrolled + "%");
+                console.log(scrolled);
+            });         
+
+         });    
+    </script>
+</body>
+</html>

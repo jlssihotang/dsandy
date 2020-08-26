@@ -1,0 +1,120 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Playfair Display', serif;
+}
+
+h1 {
+    font-weight: 100;
+}
+
+h1:hover {
+    cursor: pointer;
+}
+
+.main-title {
+    top: 5vh;
+    
+    font-size: 4em;
+}
+
+.title {
+    font-weight: 200;
+    font-size: 1.5em;
+}
+
+.big {
+    font-weight: 600;
+}
+
+.container {
+    height: 100vh;
+    /* background-color: aqua; */
+    padding: 0;
+    position: relative;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.center {
+    position: absolute;
+    width: 500px;
+    /* background-color: beige; */
+    justify-content: center;
+    align-items: center;
+    bottom: 50%;
+    left: 50%;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+    
+  }
+
+.progress {
+    z-index: 5;
+    position: fixed;
+    height: 5px;
+    top: 90%;
+    width: 0%;
+    background: #f0f000 ;
+}
+
+
+
+ul li {
+    list-style: none;
+  }
+
+ul li h1 {
+    display: none;
+}
+
+.active {
+    display: flex;
+}
+
+.hide {
+    display: none;
+}
+
+section {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+#sec-1 {
+    background: #000;
+    color: white;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+}
+
+.btn {
+    position: absolute;
+    color: white;
+    text-decoration: none;
+    margin: 0;
+    top: 150%;
+    padding: 5px 20px 5px 20px;
+    border: solid white;
+}
+
+.direction {
+    position: absolute;
+    top: -90%;
+    left: 50%;
+}
+
+.txt-center {
+    text-align: center;
+}
+
+.txt-small {
+    font-family: 'Ubuntu', sans-serif;
+    color: rgba(255,255,255,.2);
+}
